@@ -117,8 +117,7 @@ extension ReposViewController: UITableViewDataSource {
 
 extension ReposViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        return;
-        // viewModel.didSelectRow(at: indexPath)
+        viewModel.didSelecteRepo!(indexPath.item)
     }
 }
 
