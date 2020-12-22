@@ -92,11 +92,11 @@ extension ReposViewController: UITableViewDataSource {
                 (self.preTickersdata[(self.preTickersdata.count )-2][indexPath.row].pdd).replacingOccurrences(of: ",", with: ".")
             ) ?? 0
             print(lastcng)
-            if(lastcng-rcng > 0){ // if lastchagne > recentchange =goup
+            if(lastcng-rcng < 0){ // if lastchagne > recentchange =goup
                 cell.sym.text = "▲"
                 cell.sym.textColor = UIColor.green
             }
-            else if (lastcng-rcng < 0) {
+            else if (lastcng-rcng > 0) {
                 cell.sym.text = "▼"
                 cell.sym.textColor = UIColor.red
             }
