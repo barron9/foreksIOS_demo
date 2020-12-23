@@ -28,7 +28,7 @@ open class TickerCellA : UITableViewCell{
         let viewsDict = ["tickerName": tickerName,"tickerPrice":tickerPrice,"tickerTime":tickerTime,"tickerChg":tickerChg,"sym":sym]
 
         contentView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-[tickerName][tickerTime]-|", options: [], metrics: nil, views: viewsDict))
-        contentView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-8-[sym(14)]-[tickerName]-[tickerPrice]-[tickerChg]-|", options: [], metrics: nil, views: viewsDict))
+        contentView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-8-[sym(14)]-[tickerName]-[tickerPrice]-45-[tickerChg]-|", options: [], metrics: nil, views: viewsDict))
         contentView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-15-[sym(14)]|", options: [], metrics: nil, views: viewsDict))
 
         contentView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-32-[tickerTime]-|", options: [], metrics: nil, views: viewsDict))
