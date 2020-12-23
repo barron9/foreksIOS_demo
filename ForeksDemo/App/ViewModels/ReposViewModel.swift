@@ -10,6 +10,7 @@ final class ReposViewModel {
     
     var didSelecteRepo: ((Int) -> Void)?
     var timer = Timer()
+    var req:[String] = []
     private(set) var repos: [SettingsModel] = [SettingsModel]() {
         didSet {
             didUpdateRepos?(repos.map { SettingsModel(repo: $0) })

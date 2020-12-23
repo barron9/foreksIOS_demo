@@ -63,6 +63,7 @@ class ReposViewController: UIViewController {
             strongSelf.preTickersdata.append(tickers)
             print(strongSelf.preTickersdata.count)
             strongSelf.tableView.reloadData()
+            if(strongSelf.preTickersdata.count>5){strongSelf.preTickersdata = []}
         }
         viewModel.didSelecteRepo = { [weak self] id in
             guard let strongSelf = self else { return }
